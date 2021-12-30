@@ -10,7 +10,6 @@ ul {
 ==========
 Navbar
 ==========
-
 */
 #navbar {
   position: fixed;
@@ -42,4 +41,15 @@ Navbar
 .nav-link a:hover {
   background: grey;
   color: white;
+}
+
+/* 
+==========
+Navbar
+==========
+*/
+#main-doc {
+  margin-top: 3rem;
+  position: absolute;
+  margin-left: 350px;
 }
