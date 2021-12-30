@@ -19,21 +19,34 @@ Navbar
   height: 100%;
   border-right: 2px solid black;
 }
+#navbar li {
+  position: relative;
+  width: 100%;
+}
+#navbar ul {
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
 
 .nav-header {
   font-size: 2rem;
   text-align: center;
   /* add padding bottom */
   border-bottom: 2px solid black;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 .nav-link-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  justify-content: flex-start;
 }
 .nav-link a {
-  padding: 2rem;
+  display: block;
+  padding: 1rem;
   color: black;
   display: flex;
   border-bottom: 2px solid black;
@@ -45,11 +58,27 @@ Navbar
 
 /* 
 ==========
-Navbar
+Main Content
 ==========
 */
 #main-doc {
+  max-width: 70%;
   margin-top: 3rem;
   position: absolute;
   margin-left: 350px;
+}
+.main-section header {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+.main-section {
+  margin: 3rem 0;
+  border-bottom: 1px solid #6e6c6c;
+}
+.main-section p {
+  margin-bottom: 30px;
+}
+
+.main-section h3 {
+  margin-bottom: 10px;
 }
